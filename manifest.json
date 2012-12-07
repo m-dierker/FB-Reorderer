@@ -1,0 +1,13 @@
+{
+  "name": "Facebook Reorderer",
+  "description": "Reorders the Facebook sidebar to put groups on top, because ads and pages have no reason to be above groups",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://facebook.com/*", "https://facebook.com/*", "https://*. facebook.com/*", "http://*.facebook.com/*"],
+      "js": ["loader.js"]
+    }
+  ],
+  "web_accessible_resources": ["fb-reorder.js"],
+  "manifest_version": 2
+}
